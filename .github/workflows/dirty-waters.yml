@@ -27,5 +27,6 @@ jobs:
           comment_on_commit: false
           github_token: ${{ secrets.GITHUB_TOKEN }}
           gradual_report: false
-          ignore_cache: $false
+          ignore_cache: true # for this run only
           package_manager: npm
+          debug: true
