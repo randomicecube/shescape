@@ -21,12 +21,12 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Run Static Dirty Waters analysis
-        uses: chains-project/dirty-waters-action@v1.11.6
+        uses: chains-project/dirty-waters-action@v1.11.8
         with:
           allow_pr_comment: true
           comment_on_commit: false
           github_token: ${{ secrets.GITHUB_TOKEN }}
           gradual_report: false
-          ignore_cache: "true" # for this run only
+          ignore_cache: "false" # for this run only
           package_manager: npm
           debug: true
