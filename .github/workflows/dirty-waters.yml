@@ -24,10 +24,10 @@ jobs:
         uses: chains-project/dirty-waters-action@v1.11.9
         with:
           allow_pr_comment: true
-          comment_on_commit: false
+          comment_on_commit: true
           fail_on_high_severity: false
           github_token: ${{ secrets.GITHUB_TOKEN }}
           gradual_report: false
-          x_to_fail: 10
+          #x_to_fail: 10
           package_manager: npm
           debug: true
