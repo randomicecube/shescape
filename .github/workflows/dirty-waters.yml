@@ -15,6 +15,7 @@ jobs:
     runs-on: ubuntu-24.04
     permissions:
       pull-requests: write # To comment on a Pull Request
+      contents: write # To comment on commits
     steps:
       - uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938 # v4.2.0
         with:
