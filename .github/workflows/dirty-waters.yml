@@ -29,6 +29,7 @@ jobs:
           fail_on_high_severity: false
           github_token: ${{ secrets.GITHUB_TOKEN }}
           gradual_report: false
+          ignore_cache: "true"
           #x_to_fail: 10
           package_manager: npm
           debug: true
